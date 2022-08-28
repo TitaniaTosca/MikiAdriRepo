@@ -1,4 +1,22 @@
-document.getElementById("bubble").innerHTML = `ide jˆhet mindenfÈle rozsa Ès ha elÈg sokat Ìrok sample akkor meg is fog l·tszani hogy szÈp e.
-ez egy rohadt nagy szˆvegdoboz lesz a kˆrben valami idÈzet vagy szemÈlyes dolog vagy igaz·bÛl
-b·rmi, de vajon jÛl nÈz e ki ? tal·n Ìgy fasza lesz, Ès m·r csak p·r dolgot kell bezs˙folni az
-oldalra`;
+var text1 = "ide j√∂het mindenf√©le rizsa √©s ha el√©g sokat √≠rok sample akkor meg is fog l√°tszani hogy sz√©p e." +
+    "ez egy rohadt nagy sz√∂vegdoboz lesz a k√∂rben valami id√©zet vagy szem√©lyes dolog vagy igaz√°b√≥l" +
+    "b√°rmi, de vajon j√≥l n√©z e ki ? tal√°n √≠gy fasza lesz, √©s m√°r csak p√°r dolgot kell bezs√∫folni az" +
+    "oldalra";
+var text2 = "itt egy m√°sik sz√∂veg, ez r√∂vid";
+var text3 = "meg m√©gegy √©s n√©zz√ºk hogy ez j√≥ e, v√°ltogatja e √©s ut√°na visszamegy-e az elej√©re?";
+var bubble_texts = new Array();
+bubble_texts.push(text1);
+bubble_texts.push(text2);
+bubble_texts.push(text3);
+var i = 0;
+function iterateBubbleTexts() {
+    if (i == 2) {
+        i = 0;
+    }
+    else {
+        i++;
+    }
+    document.getElementById("bubble").innerHTML = bubble_texts[i];
+}
+setInterval(iterateBubbleTexts, 5000);
+iterateBubbleTexts();
