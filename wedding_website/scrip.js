@@ -8,7 +8,7 @@ var bubble_texts = new Array();
 bubble_texts.push(text1);
 bubble_texts.push(text2);
 bubble_texts.push(text3);
-var i = 0;
+var i = -1;
 function iterateBubbleTexts() {
     if (i == 2) {
         i = 0;
