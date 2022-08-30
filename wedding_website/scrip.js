@@ -1,3 +1,4 @@
+document.body.style.visibility = "hidden";
 var text1 = "ide jöhet mindenféle rizsa és ha elég sokat írok sample akkor meg is fog látszani hogy szép e." +
     "ez egy rohadt nagy szövegdoboz lesz a körben valami idézet vagy személyes dolog vagy igazából" +
     "bármi, de vajon jól néz e ki ? talán így fasza lesz, és már csak pár dolgot kell bezsúfolni az" +
@@ -18,5 +19,9 @@ function iterateBubbleTexts() {
     }
     document.getElementById("bubble").innerHTML = bubble_texts[i];
 }
+function loaded(){
+    document.body.style.visibility = "visible";
+}
+document.onload = loaded();
 setInterval(iterateBubbleTexts, 5000);
 iterateBubbleTexts();
