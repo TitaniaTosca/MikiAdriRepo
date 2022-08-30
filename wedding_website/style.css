@@ -58,10 +58,10 @@ body {
 }
 @media screen and (orientation: landscape){
 	#cim{
-		top: min(15vw, 288px);
+		top: min(11vw, 211.2px);
 	}
 	#main{
-		top: min(30vw, 864px);
+		top: min(16vw, 307.2px);
 		width: 30%;
 		margin: auto;
 	}
